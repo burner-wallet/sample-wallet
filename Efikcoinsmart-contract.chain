@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract Efikcoin {
+contract Efikcoin {0xC5AD5cfcF81AD63a94227334b898eafCe6B27cCA
     string public name = "Efikcoin";
     string public symbol = "EFIK";
     uint8 public decimals = 18;
