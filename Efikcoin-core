@@ -1,0 +1,14 @@
+// Connect Wallet
+async function connectWallet() {
+  if (window.ethereum) {
+    try {
+      const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+      document.getElementById('walletStatus').innerText = `Wallet Connected ✅: ${accounts[0]}`;
+    } catch (error) {
+      console.error('Wallet connection failed:', error);
+      alert('⚠️ Wallet connection failed.');
+    }
+  } else {
+    alert('🦊 Please install MetaMask or activate wallet provider.');
+  }
+}
